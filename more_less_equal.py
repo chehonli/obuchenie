@@ -1,3 +1,11 @@
+# A game for the terminal. The task of the game :
+# - The first player guesses a number and sets the number of attempts
+# - The second player tries to guess the first player's number
+
+# Игра для терминала. Задача игры :
+# - Первый игрок угадывает число и устанавливает количество попыток.
+# - Второй игрок пытается угадать число первого игрока
+
 import os
 
 def check(secret, guess): 
@@ -35,11 +43,3 @@ while resul2 == 0 and attempts_int > 0:
         print(f"You didn't guess the number. The guessed number is {resul1}.")
 
     attempts_int -= 1
-    
-# A game for the terminal. The task of the game :
-# - The first player guesses a number and sets the number of attempts
-# - The second player tries to guess the first player's number
-
-# Игра для терминала. Задача игры :
-# - Первый игрок угадывает число и устанавливает количество попыток.
-# - Второй игрок пытается угадать число первого игрока
