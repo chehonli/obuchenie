@@ -25,21 +25,21 @@ os.system('cls' if os.name == 'nt' else 'clear')
 attempts_int = int(input('how many attempts do you give him? >> '))
 os.system('cls' if os.name == 'nt' else 'clear')
 
-resul2 = 0
+result_2 = 0
 
-while resul2 == 0 and attempts_int > 0:
+while result_2 == 0 and attempts_int > 0:
     guess = input(f'You have {attempts_int} tries to guess the number >> ')
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    resul1, resul2 = check(secret, guess)
+    result_1, result_2 = check(secret, guess)
 
-    if resul2 == 1:
+    if result_2 == 1:
         print('You guessed the number!! ;)')
 
     elif attempts_int == 1:
-        print(f"You didn't guess the number. The guessed number is {resul1}. You have run out of things to try. :(")
+        print(f"You didn't guess the number. The guessed number is {result_1}. You have run out of things to try. :(")
 
     else:
-        print(f"You didn't guess the number. The guessed number is {resul1}.")
+        print(f"You didn't guess the number. The guessed number is {result_1}.")
 
     attempts_int -= 1
